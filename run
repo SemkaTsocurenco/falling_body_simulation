@@ -1,0 +1,11 @@
+#!/bin/sh
+mkdir build
+mkdir results
+cd build 
+cmake ../
+make -j16 
+./falling_body_simulation
+cd ../python
+python3 ./visualization.py
+cd ../
+echo "Программа завершила работу"
